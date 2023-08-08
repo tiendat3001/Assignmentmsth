@@ -1,6 +1,9 @@
 {% extends 'base.html.twig' %}
 {% block body %}
     {{ form_start(form) }}
+    <div class="row mt-5 justify-content-center" data=aos"fade-up">
+    <div class="col-lg-10">
+        <div class="form-group mt-3">
     <div class="form-group">
         <label for="category">Category</label>
         {{ form_widget(form.category,{
@@ -52,5 +55,8 @@
         }) }}
     </div>
     <input type="submit" name="create_product" value="Create" class="btn btn-primary"/>
+        </div>
+    </div>
+    </div>
     {{ form_end(form) }}
 {% endblock %}
