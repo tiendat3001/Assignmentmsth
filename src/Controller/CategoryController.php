@@ -18,7 +18,6 @@ class CategoryController extends AbstractController
             'categories'=>$categories
         ]);
     }
-
     #[Route('/category/delete/{id}', name: 'category_delete')]
     public function deleteAction(ManagerRegistry $doctrine, $id): Response
     {
