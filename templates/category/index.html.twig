@@ -17,8 +17,7 @@
                     <td><a href="{{path('app_category',{'id':category.id})}} ">{{ category.categoryname }}</a></td>
 
                     <td>
-                        <a href="{{path('app_category',{'id':category.id})}} " class='btn btn-success'>Delete</a>
-{#                        <a href="{{ path('product_delete', {'id': category.id}) }} "class='btn btn-danger'>Delete</a>#}
+                        <a href="{{path('category_delete', {'id': category.id}) }} "class='btn btn-danger'>Delete</a>
                     </td>
                 </tr>
             {% endfor %}
