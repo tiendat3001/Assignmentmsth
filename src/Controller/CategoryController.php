@@ -26,7 +26,6 @@ class CategoryController extends AbstractController
         $categories = $em->getRepository('App\Entity\Category')->find($id);
         $em->remove($categories);
         $em->flush();
-
         $this->addFlash(
             'error',
             'Category deleted'
